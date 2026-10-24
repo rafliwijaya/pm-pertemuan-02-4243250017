@@ -32,3 +32,8 @@ Ketiga: Pencarian Kode Produk di Katalog (Mencegah Crash Akibat Kode Salah)
 Akses ke Map pakai kunci (katalog[kode]) pada Dart selalu menghasilkan tipe nullable (Record?). Jika pembeli memasukkan kode yang tidak ada (misalnya 'P99'), hasil dari katalog['P99'] adalah null. Jika tanpa pengaman kita langsung memanggil katalog['P99'].harga, program akan melempar fatal error: NoSuchMethodError: The getter 'harga' was called on null.
 Jadi kita memeriksa if (produk == null). Melalui mekanisme canggih Dart yang disebut Type Promotion, compiler tau bahwa setelah blok if (produk == null) dilewati, variabel produk pasti bukan null. Oleh karena itu, kita dapat langsung mengakses produk.nama, produk.harga, dan produk.kategori dengan aman tanpa perlu tanda seru (!) paksa.
 
+D. PERNYATAAN PENGGUNAAN AI
+Saya menggunakan ai untuk melakukan generate kode awal terlebih dahulu, meng-copy kode AI tersebut, setelah itu baru memahami tiap blok kode / tiap TODO 1-5. Setelah cukup paham, saya kemudian mengetik ulang kode yang diberikan agar apa yang saya pahami bisa nyambung nggak dengan ketikan manual saya, kalau lupa/tidak paham baru nyontek kode dari AI tersebut. saya juga menggunakan AI membantu memahami topik utama yaitu NullSafety khusus di kode program saya ini.
+
+E. Dart Analyze
+![Screenshot Dart Analyze](./assets/dartanalyze.png)

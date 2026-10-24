@@ -120,7 +120,7 @@ void main() {
   }
 
   // certak struk pembelian
-  print('\n' + '=' * 46);
+  print('\n${'=' * 46}');
   print('STRUK BELANJA');
   print('TOKO OLEH-OLEH MEDAN');
   print('=' * 46);
